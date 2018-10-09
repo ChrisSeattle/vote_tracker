@@ -31,7 +31,7 @@ class Votetracker extends React.Component {
             if (vote > 0) {
                 polarity = 'positive';
             }
-            else {
+            if (vote < 0) {
                 polarity = 'negative';
             }
             this.setState({ vote_limit, vote, polarity})
@@ -47,8 +47,8 @@ class Votetracker extends React.Component {
         return (
             <main>
                 <h2 className={this.state.polarity}> {this.state.vote} </h2>
-                <span onClick={this.down_vote_count}> Down Vote </span>
-                <span onClick={this.up_vote_count}> Up Vote </span>
+                <span className="down-btn" onClick={this.down_vote_count}> Down Vote </span>
+                <span className="up-btn" onClick={this.up_vote_count}> Up Vote </span>
                 <h3> Votes Remaining: {this.state.vote_limit} </h3>
             </main>
             )
