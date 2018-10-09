@@ -1,0 +1,43 @@
+main {
+    padding: 10vw;
+    font-size: 1.5vw;
+    background: #aaaaaa;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+main span {
+  padding: .5vw;
+  border-radius: 4px;
+  margin: 2vw 1vw;
+  color: #eee;
+  cursor: pointer;
+  transition: 400ms all; 
+  font-size: 1.5vw;
+}
+
+h2.positive {
+  color: green;
+}
+
+h2.negative {
+  color: red;
+}
+
+span.up-btn {
+  background: green;
+}
+
+span.down-btn {
+  background: red;
+}
+
+span.up-btn:hover {
+  background: #555;
+  color: green;
+}
+
+span.down-btn:hover {
+  background: #555;
+  color: red;
+}
