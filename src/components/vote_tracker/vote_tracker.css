@@ -5,3 +5,17 @@ main {
     min-height: 100vh;
     text-align: center;
   }
+
+main span {
+  padding: .5vw;
+  border-radius: 4px;
+  background: #fff;
+  margin: 1vw;
+  cursor: pointer;
+  transition: 400ms all; 
+}
+
+main span:hover {
+  background: #555;
+  color: red;
+}
